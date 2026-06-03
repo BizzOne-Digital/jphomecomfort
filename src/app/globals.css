@@ -15,7 +15,7 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: auto; }
   body {
     font-family: 'Open Sans', system-ui, sans-serif;
     color: #1B2A4A;
