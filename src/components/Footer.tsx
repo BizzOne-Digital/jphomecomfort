@@ -12,7 +12,7 @@ export default function Footer() {
             <h3 className="font-heading font-extrabold text-2xl md:text-3xl text-white">
               Need Emergency HVAC Service?
             </h3>
-            <p className="text-red-100 text-lg mt-1">Available 24/7 — We are just one call away.</p>
+            <p className="text-red-100 text-lg mt-1">Available 24/7  We are just one call away.</p>
           </div>
           <a href="tel:+16479485859" className="bg-white text-brand-red font-bold text-lg px-8 py-4 rounded-lg hover:bg-slate-50 transition-all shadow-xl flex items-center gap-3 whitespace-nowrap">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.64 21 20.28 21 19.92 21C10.4 21 2.83 13.42 3.03 3.92C3.05 3.41 3.49 3 4 3H7C7.55 3 8 3.45 8 4C8 5.25 8.21 6.45 8.59 7.57L6.78 9.38C8.06 12.15 10.36 14.45 13.13 15.73L14.94 13.92C16.06 14.3 17.26 14.51 18.51 14.51C19.05 14.51 19.5 14.95 19.5 15.51V16.92Z"/></svg>

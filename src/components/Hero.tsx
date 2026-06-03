@@ -52,7 +52,7 @@ export default function Hero() {
           {/* Description */}
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed mb-10 max-w-xl mx-auto">
             Expert installation, repair, and maintenance for your home.
-            Fast, reliable, and affordable — serving the Greater Toronto Area.
+            Fast, reliable, and affordable  serving the Greater Toronto Area.
           </p>
 
           {/* Trust badges */}

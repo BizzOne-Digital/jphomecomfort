@@ -6,7 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "JP Home Comfort | Heating, Cooling & Water Systems",
-  description: "Professional HVAC services — furnace, AC, water heater repair & installation. Comfort You Can Count On. Serving the Greater Toronto Area.",
+  description: "Professional HVAC services  furnace, AC, water heater repair & installation. Comfort You Can Count On. Serving the Greater Toronto Area.",
   keywords: "HVAC, heating, cooling, water systems, furnace, AC, GTA, Toronto",
 };
 

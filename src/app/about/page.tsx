@@ -11,7 +11,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <PageHeader title="About" highlight="Us" subtitle="Learn about JP Home Comfort — your trusted HVAC partner since 2009." />
+      <PageHeader title="About" highlight="Us" subtitle="Learn about JP Home Comfort  your trusted HVAC partner since 2009." />
 
       {/* Story section */}
       <section className="py-20 lg:py-28 bg-white">
@@ -25,7 +25,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-slate-500 text-[16px] leading-relaxed">
                 <p>JP Home Comfort was founded with a simple mission: to provide homeowners across the Greater Toronto Area with reliable, professional, and affordable HVAC services.</p>
                 <p>With over 15 years of experience, our team of licensed technicians has helped thousands of families stay comfortable through every season. From emergency furnace repairs on the coldest winter nights to AC installations that beat the summer heat, we are here when you need us.</p>
-                <p>We believe in doing the job right the first time, with honest pricing and no hidden fees. That is why our customers keep coming back — and recommending us to their friends and family.</p>
+                <p>We believe in doing the job right the first time, with honest pricing and no hidden fees. That is why our customers keep coming back  and recommending us to their friends and family.</p>
               </div>
             </div>
 

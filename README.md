@@ -1,4 +1,4 @@
-# JP Home Comfort — Next.js Website
+# JP Home Comfort  Next.js Website
 
 Professional HVAC website with brand-matched design (Red + Navy + Cyan theme from logo).
 
@@ -23,9 +23,9 @@ Both use **Gmail App Password** via Nodemailer.
 
 ## Brand Colors (from logo)
 
-- **Red**: `#E31E24` — "JP HOME", roof accent, CTAs
-- **Navy**: `#1B2A4A` — "COMFORT", backgrounds, text
-- **Cyan**: `#0099D6` — "HEATING | COOLING | WATER SYSTEMS", secondary
+- **Red**: `#E31E24`  "JP HOME", roof accent, CTAs
+- **Navy**: `#1B2A4A`  "COMFORT", backgrounds, text
+- **Cyan**: `#0099D6`  "HEATING | COOLING | WATER SYSTEMS", secondary
 
 ## Tech Stack
 
@@ -56,7 +56,7 @@ npm start
 
 ## Customization
 
-- **Phone**: Search `647-948-5859` — replace everywhere
+- **Phone**: Search `647-948-5859`  replace everywhere
 - **Email**: Update `.env.local` + search `info@jphomecomfort.ca`
 - **Colors**: Edit `tailwind.config.ts` + `globals.css`
 - **Services**: Edit `src/components/HomeServices.tsx` + `src/app/services/page.tsx`
