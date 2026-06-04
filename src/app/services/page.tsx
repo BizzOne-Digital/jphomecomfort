@@ -2,20 +2,23 @@ import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 
 const services = [
-  { id: "furnace", title: "Furnace Services", desc: "Keep your home warm all winter with our expert furnace services. We install, repair, and maintain all major brands and models.", features: ["High-efficiency furnace installation", "Emergency furnace repair (24/7)", "Annual furnace tune-up & inspection", "Filter replacement & cleaning", "Gas & electric furnace service", "Warranty-backed parts & labor"], icon: "M13 2L3 14h9l-1 8 10-12h-9l1-8z" },
-  { id: "ac", title: "Air Conditioning", desc: "Stay cool with our AC installation and repair services. Energy-efficient systems that save you money.", features: ["Central AC installation", "AC repair & troubleshooting", "Seasonal AC tune-up", "Refrigerant recharge", "Ductless mini-split systems", "Smart thermostat integration"], icon: "M3 8h18v10H3z M8 18v3 M16 18v3 M6 5h12" },
-  { id: "water", title: "Water Heaters", desc: "Never run out of hot water. Tankless and traditional water heater installation and repair.", features: ["Tankless water heater install", "Traditional tank water heaters", "Water heater repair", "Energy-efficient upgrades", "Same-day hot water solutions", "Annual maintenance plans"], icon: "M12 2v6 M12 22v-6 M4.93 4.93l4.24 4.24 M14.83 14.83l4.24 4.24 M2 12h6 M16 12h6" },
-  { id: "heatpump", title: "Heat Pumps", desc: "Year-round comfort in one system. Heat pumps provide efficient heating and cooling.", features: ["Air-source heat pump install", "Geothermal systems", "Heat pump repair & service", "Government rebate assistance", "Energy audit & sizing", "Hybrid heating systems"], icon: "M12 3a9 9 0 019 9 M12 3a9 9 0 00-9 9 M12 3v18 M3 12h18" },
-  { id: "duct", title: "Duct Cleaning", desc: "Improve indoor air quality with professional duct cleaning. Remove dust, allergens, and contaminants.", features: ["Complete duct system cleaning", "Dryer vent cleaning", "Duct sanitizing & deodorizing", "Camera inspection", "Air duct sealing", "HEPA filtration upgrade"], icon: "M12 12v9 M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2 M7 7h10" },
-  { id: "maintenance", title: "Maintenance Plans", desc: "Preventive maintenance extends equipment life and prevents costly breakdowns.", features: ["Annual HVAC inspection", "Priority emergency service", "Discounted repair rates", "Filter & parts included", "Seasonal tune-ups", "Extended warranty coverage"], icon: "M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" },
+  { id: "furnace", title: "Furnace Services", desc: "Keep your home warm all winter with our expert furnace services. We install, repair, and maintain all major brands.", features: ["High-efficiency furnace installation", "Furnace repair & troubleshooting", "Annual furnace tune-up & inspection", "Filter replacement & cleaning", "Gas & electric furnace service", "Warranty-backed parts & labor"], img: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=800&auto=format&fit=crop" },
+  { id: "ac", title: "Air Conditioning", desc: "Stay cool with energy-efficient AC installation and repair services for your home.", features: ["Central AC installation", "AC repair & troubleshooting", "Seasonal AC tune-up", "Refrigerant recharge", "Ductless mini-split systems", "Smart thermostat integration"], img: "https://images.unsplash.com/photo-1631545806609-2e4d5cd48cf2?q=80&w=800&auto=format&fit=crop" },
+  { id: "water-heater", title: "Water Heaters", desc: "Never run out of hot water. Tankless and traditional water heater installation and repair.", features: ["Tankless water heater install", "Traditional tank water heaters", "Water heater repair", "Energy-efficient upgrades", "Same-day hot water solutions", "Annual maintenance plans"], img: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop" },
+  { id: "heat-pump", title: "Heat Pumps", desc: "Year-round comfort with a single system. Heat pumps provide efficient heating and cooling.", features: ["Air-source heat pump install", "Geothermal systems", "Heat pump repair & service", "Government rebate assistance", "Energy audit & sizing", "Hybrid heating systems"], img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop" },
+  { id: "water-systems", title: "Water Systems", desc: "Complete water solutions for your home — filtration, softening, purification, and plumbing systems.", features: ["Water filtration systems", "Water softener installation", "Reverse osmosis systems", "Plumbing repairs & upgrades", "Water quality testing", "Whole-home water treatment"], img: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=800&auto=format&fit=crop" },
+  { id: "air-systems", title: "Air Systems", desc: "Improve your indoor air quality with professional ventilation, purification, and humidity control.", features: ["HRV / ERV installation", "Air purifier systems", "Whole-home humidifiers", "Indoor air quality testing", "Ventilation upgrades", "UV germicidal lights"], img: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop" },
+  { id: "duct", title: "Duct Cleaning", desc: "Professional duct cleaning to remove dust, allergens, and contaminants from your home.", features: ["Complete duct system cleaning", "Dryer vent cleaning", "Duct sanitizing & deodorizing", "Camera inspection", "Air duct sealing", "HEPA filtration upgrade"], img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop" },
+  { id: "maintenance", title: "Maintenance Plans", desc: "Preventive maintenance extends equipment life and prevents costly breakdowns.", features: ["Annual HVAC inspection", "Priority service scheduling", "Discounted repair rates", "Filter & parts included", "Seasonal tune-ups", "Extended warranty coverage"], img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" },
 ];
 
 export default function ServicesPage() {
   return (
     <>
-      <PageHeader title="Our" highlight="Services" subtitle="Complete HVAC solutions for heating, cooling, and water systems." />
+      <PageHeader title="Our" highlight="Services" subtitle="Heating, cooling, water and air system solutions for your home." />
+
       <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 lg:space-y-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 lg:space-y-32">
           {services.map((s, i) => (
             <div key={s.id} id={s.id} className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 !== 0 ? "lg:[direction:rtl] lg:[&>*]:![direction:ltr]" : ""}`}>
               <div>
@@ -30,15 +33,19 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="btn-red text-[15px]">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg></Link>
+                <Link href="/contact" className="btn-red text-[15px]">
+                  Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg>
+                </Link>
               </div>
-              <div className="bg-slate-50 rounded-2xl p-8 lg:p-10 border border-slate-100">
-                <div className="w-16 h-16 rounded-xl bg-brand-red/10 flex items-center justify-center mb-6">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E31E24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d={s.icon}/></svg>
+
+              {/* Image + info card */}
+              <div className="space-y-4">
+                <div className="rounded-2xl overflow-hidden h-64 lg:h-80">
+                  <img src={s.img} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  {[{l:"Response",v:"< 2 Hrs"},{l:"Warranty",v:"Up to 10 Yrs"},{l:"Pricing",v:"Free Quote"},{l:"Available",v:"24/7"}].map(m=>(
-                    <div key={m.l} className="bg-white rounded-lg p-4 border border-slate-100">
+                <div className="grid grid-cols-2 gap-3">
+                  {[{l:"Response",v:"< 2 Hrs"},{l:"Warranty",v:"Up to 10 Yrs"},{l:"Pricing",v:"Free Quote"},{l:"Financing",v:"Available"}].map(m=>(
+                    <div key={m.l} className="bg-slate-50 rounded-lg p-4 border border-slate-100">
                       <div className="text-slate-400 text-xs font-semibold uppercase tracking-wide mb-1">{m.l}</div>
                       <div className="text-brand-navy font-bold">{m.v}</div>
                     </div>
@@ -49,14 +56,29 @@ export default function ServicesPage() {
           ))}
         </div>
       </section>
-      <section className="py-16 bg-brand-navy"><div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="font-heading text-3xl font-extrabold text-white mb-4">Ready to Get Started?</h2>
-        <p className="text-slate-300 text-lg mb-8">Contact us today for a free consultation and quote.</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact" className="btn-red text-lg px-8 py-4">Get Free Quote</Link>
-          <a href="tel:+16479485859" className="btn-outline-white text-lg px-8 py-4 text-center">+1 647-948-5859</a>
+
+      {/* Financing */}
+      <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h3 className="font-heading font-bold text-2xl text-brand-navy mb-3">Flexible Financing Available</h3>
+          <p className="text-slate-500 mb-6">We partner with <strong>Finance It</strong>, <strong>Abode Financial</strong>, and <strong>Vista Rentals</strong> for affordable payment options.</p>
+          <Link href="/about" className="text-brand-cyan font-semibold inline-flex items-center gap-2 hover:text-brand-red transition-colors">
+            Learn About Financing <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg>
+          </Link>
         </div>
-      </div></section>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-brand-navy">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="font-heading text-3xl font-extrabold text-white mb-4">Ready to Get Started?</h2>
+          <p className="text-slate-300 text-lg mb-8">Contact us for a free consultation and quote.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="btn-red text-lg px-8 py-4">Get Free Quote</Link>
+            <a href="tel:+16479485859" className="btn-outline-white text-lg px-8 py-4 text-center">+1 647-948-5859</a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
