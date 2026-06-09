@@ -2,14 +2,14 @@
 import Link from "next/link";
 
 const services = [
-  { title: "Furnace Services", desc: "High-efficiency furnace installation, repair & maintenance for all brands.", img: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=800&auto=format&fit=crop" },
-  { title: "Air Conditioning", desc: "Central AC, ductless mini-splits, repairs & seasonal tune-ups.", img: "https://images.unsplash.com/photo-1631545806609-2e4d5cd48cf2?q=80&w=800&auto=format&fit=crop" },
-  { title: "Water Heaters", desc: "Tankless & traditional water heater installation and repair.", img: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop" },
-  { title: "Heat Pumps", desc: "Energy-efficient heat pumps for year-round heating and cooling.", img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop" },
-  { title: "Water Systems", desc: "Complete water filtration, softening, and plumbing system solutions.", img: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=800&auto=format&fit=crop" },
-  { title: "Air Systems", desc: "Indoor air quality solutions — purifiers, HRVs, and ventilation.", img: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop" },
-  { title: "Duct Cleaning", desc: "Professional duct cleaning for healthier indoor air quality.", img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop" },
-  { title: "Maintenance Plans", desc: "Preventive care to extend equipment life and avoid breakdowns.", img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" },
+  { title: "Furnace Services", desc: "High-efficiency furnace installation, repair & maintenance for all brands.", img: "/4.png" },
+  { title: "Air Conditioning", desc: "Central AC, ductless mini-splits, repairs & seasonal tune-ups.", img: "/6.png" },
+  { title: "Water Heaters", desc: "Tankless & traditional water heater installation and repair.", img: "/3.png" },
+  { title: "Heat Pumps", desc: "Energy-efficient heat pumps for year-round heating and cooling.", img: "/2.png" },
+  { title: "Water Systems", desc: "Complete water filtration, softening, and plumbing system solutions.", img: "/8.png" },
+  { title: "Air Systems", desc: "Indoor air quality solutions — purifiers, HRVs, and ventilation.", img: "/1.png" },
+  { title: "Duct Cleaning", desc: "Professional duct cleaning for healthier indoor air quality.", img: "/8.png" },
+  { title: "Maintenance Plans", desc: "Preventive care to extend equipment life and avoid breakdowns.", img: "/5.png" },
 ];
 
 export default function HomeServices() {

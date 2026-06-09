@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
           <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
         </div>
         <div className="hidden lg:block relative">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop" alt="HVAC technician" className="w-full h-full object-cover" />
+          <img src="/5.png" alt="HVAC technician" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-brand-navy-dark/30" />
         </div>
       </div>

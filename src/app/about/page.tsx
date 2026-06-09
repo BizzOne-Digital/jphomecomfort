@@ -21,7 +21,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden h-[450px]">
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop" alt="HVAC technician at work" className="w-full h-full object-cover" />
+              <img src="/5.png" alt="HVAC technician at work" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/40 to-transparent" />
             </div>
           </div>
