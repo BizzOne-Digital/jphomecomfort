@@ -105,33 +105,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Blog / Tips */}
-      <section className="py-20 lg:py-28 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <div className="section-label justify-center">Tips & Insights</div>
-            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-navy mb-4">HVAC <span className="text-brand-red">Tips</span> for Homeowners</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "When Should You Replace Your Furnace?", excerpt: "If your furnace is over 15 years old, making unusual noises, or your energy bills are rising, it may be time for a replacement. Here are the key signs to watch for.", img: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=600&auto=format&fit=crop", tag: "Heating" },
-              { title: "5 Ways to Improve Indoor Air Quality", excerpt: "From duct cleaning to HRV systems and air purifiers, learn how to breathe cleaner air at home and reduce allergens for your family.", img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=600&auto=format&fit=crop", tag: "Air Quality" },
-              { title: "Tankless vs. Tank Water Heaters: Which Is Right?", excerpt: "Comparing energy efficiency, upfront costs, and long-term savings to help you choose the best water heating solution for your home.", img: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&auto=format&fit=crop", tag: "Water Systems" },
-            ].map(b => (
-              <article key={b.title} className="bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-xl transition-shadow group">
-                <div className="h-48 overflow-hidden relative">
-                  <img src={b.img} alt={b.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <span className="absolute top-3 left-3 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full">{b.tag}</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading font-bold text-lg text-brand-navy mb-2 group-hover:text-brand-red transition-colors">{b.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">{b.excerpt}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Brands */}
       <section className="py-12 bg-white border-t border-slate-100">
