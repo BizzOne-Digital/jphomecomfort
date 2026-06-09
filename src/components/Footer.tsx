@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Brand */}
             <div>
-              <img src="/logo1.jpg" alt="JP Home Comfort" className="h-16 w-auto mb-5" />
+              <img src="/logo2.png" alt="JP Home Comfort" className="h-16 w-auto mb-5" />
               <p className="text-slate-400 leading-relaxed text-[15px] mb-6">
                 Comfort You Can Count On. Professional heating, cooling, and water system services for the Greater Toronto Area.
               </p>
