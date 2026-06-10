@@ -69,7 +69,7 @@ export default function Footer() {
             <div>
               <h4 className="font-heading font-bold text-lg mb-6">Quick Links</h4>
               <ul className="space-y-3 text-slate-400 text-[15px]">
-                {[{l:"Home",h:"/"},{l:"Services",h:"/services"},{l:"About Us",h:"/about"},{l:"Service Areas",h:"/areas"},{l:"Contact",h:"/contact"}].map(i=>(
+                {[{l:"Home",h:"/"},{l:"Services",h:"/services"},{l:"About Us",h:"/about"},{l:"Service Areas",h:"/areas"},{l:"Blog",h:"/blog"},{l:"Contact",h:"/contact"}].map(i=>(
                   <li key={i.l}><Link href={i.h} className="hover:text-brand-cyan transition-colors">{i.l}</Link></li>
                 ))}
               </ul>
@@ -99,7 +99,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-3">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6V12L16 14"/></svg>
-                  Mon – Sat: 9AM – 7PM
+                  Mon – Sat: 9AM – 6PM
                 </div>
               </div>
             </div>

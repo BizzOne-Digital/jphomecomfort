@@ -32,6 +32,7 @@ export default function Header() {
     { href: "/services", label: "Services" },
     { href: "/about", label: "About Us" },
     { href: "/areas", label: "Service Areas" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -45,7 +46,7 @@ export default function Header() {
           <div className="flex items-center gap-8">
             <span className="flex items-center gap-2 text-slate-300">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6V12L16 14"/></svg>
-              Mon – Sat: 9:00 AM – 7:00 PM
+              Mon – Sat: 9:00 AM – 6:00 PM
             </span>
             <span className="flex items-center gap-2 text-slate-300">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z"/><circle cx="12" cy="9" r="3"/></svg>

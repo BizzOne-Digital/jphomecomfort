@@ -3,6 +3,7 @@ import QuickBooking from "@/components/QuickBooking";
 import HomeServices from "@/components/HomeServices";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
+import BrandLogos from "@/components/BrandLogos";
 import Link from "next/link";
 
 export default function Home() {
@@ -14,15 +15,11 @@ export default function Home() {
 
       <HomeServices />
 
-      {/* Brands strip — single row, no wrap */}
-      <section className="py-10 bg-slate-50 border-y border-slate-100">
+      {/* Brands strip */}
+      <section className="py-12 bg-slate-50 border-y border-slate-100">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-6">Trusted Brands We Install & Service</p>
-          <div className="flex justify-center items-center gap-8 lg:gap-12 overflow-x-auto pb-2">
-            {["Lennox","Carrier","Trane","Goodman","Daikin","Rheem","Navien"].map(b => (
-              <span key={b} className="font-heading font-bold text-lg lg:text-xl text-slate-300 hover:text-brand-navy transition-colors cursor-default whitespace-nowrap flex-shrink-0">{b}</span>
-            ))}
-          </div>
+          <p className="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-8">Trusted Brands We Install & Service</p>
+          <BrandLogos />
         </div>
       </section>
 
@@ -61,12 +58,18 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+            {/* Original image — same as before */}
             <div className="relative rounded-2xl overflow-hidden h-[400px] lg:h-[500px]">
-              <img src="https://images.unsplash.com/photo-1569982615761-66697da68502?q=80&w=1200&auto=format&fit=crop" alt="Greater Toronto Area" className="w-full h-full object-cover" />
+              <img
+                src="https://images.unsplash.com/photo-1569982615761-66697da68502?q=80&w=1200&auto=format&fit=crop"
+                alt="Ontario province map"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-dark/70 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="grid grid-cols-3 gap-3">
-                  {[{num:"16+",l:"Cities"},{num:"30 min",l:"Avg Response"},{num:"$0",l:"Travel Fee"}].map(s=>(
+                  {[{num:"30+",l:"Cities"},{num:"30 min",l:"Avg Response"},{num:"$0",l:"Travel Fee"}].map(s=>(
                     <div key={s.l} className="bg-white/10 backdrop-blur-md rounded-lg p-3 text-center border border-white/10">
                       <div className="font-heading font-extrabold text-xl text-white">{s.num}</div>
                       <div className="text-white/70 text-xs font-medium">{s.l}</div>
@@ -75,18 +78,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div>
               <div className="section-label">Coverage Area</div>
-              <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-navy mb-6">Serving the <span className="text-brand-red">Greater Toronto Area</span></h2>
-              <p className="text-slate-500 text-lg leading-relaxed mb-8">From Brampton to the surrounding suburbs, our HVAC professionals are ready to serve you. Fast response, no travel surcharge.</p>
+              <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-navy mb-6">
+                Serving <span className="text-brand-red">All of Ontario</span>
+              </h2>
+              <p className="text-slate-500 text-lg leading-relaxed mb-8">
+                From Windsor to Kingston and everywhere in between — our HVAC professionals are ready to serve you across Ontario. Fast response, no travel surcharge.
+              </p>
               <div className="flex flex-wrap gap-2 mb-8">
-                {["Brampton","Toronto","Mississauga","Markham","Vaughan","Richmond Hill","Oakville","Burlington","Hamilton","Ajax","Pickering","Whitby"].map(c=>(
+                {["Brampton","Toronto","Mississauga","Markham","Vaughan","Richmond Hill","Oakville","Burlington","Hamilton","Guelph","Kitchener","London","Windsor","Kingston","Oshawa","Peterborough"].map(c=>(
                   <span key={c} className="bg-slate-100 text-slate-600 text-sm font-semibold px-3 py-1.5 rounded-lg hover:bg-brand-red/10 hover:text-brand-red transition-colors cursor-default">{c}</span>
                 ))}
-                <span className="text-brand-cyan font-semibold text-sm px-3 py-1.5">+4 more</span>
+                <span className="text-brand-cyan font-semibold text-sm px-3 py-1.5">+14 more</span>
               </div>
               <Link href="/areas" className="btn-red text-[15px]">View All Areas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg></Link>
             </div>
+
           </div>
         </div>
       </section>

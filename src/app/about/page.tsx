@@ -1,5 +1,31 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+import BrandLogos from "@/components/BrandLogos";
+
+const blogs = [
+  {
+    slug: "hvac-maintenance-tips",
+    title: "10 HVAC Maintenance Tips Every Ontario Homeowner Should Know",
+    excerpt: "Regular maintenance prevents costly breakdowns and keeps your energy bills in check.",
+    category: "Maintenance",
+    image: "/Air-Conditioner-Maintenance-1-1.webp",
+  },
+  {
+    slug: "furnace-vs-heat-pump",
+    title: "Furnace vs Heat Pump: Which Is Right for Your Ontario Home?",
+    excerpt: "We break down the pros, cons, and costs to help you make the best decision.",
+    category: "Buying Guide",
+    image: "/Heat-Pump3-2.webp",
+  },
+  {
+    slug: "signs-ac-needs-repair",
+    title: "6 Warning Signs Your Air Conditioner Needs Repair Before Summer",
+    excerpt: "Learn the early warning signs before the hottest day of summer leaves you stranded.",
+    category: "AC Repair",
+    image: "/Close-up-of-Air-Conditioning-Repair-1.webp",
+  },
+];
+
 
 export default function AboutPage() {
   return (
@@ -14,9 +40,9 @@ export default function AboutPage() {
               <div className="section-label">Our Story</div>
               <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-navy mb-6"><span className="text-brand-red">Comfort</span> You Can Count On</h2>
               <div className="space-y-4 text-slate-500 text-[16px] leading-relaxed">
-                <p>JP Home Comfort was founded with a simple mission: to provide homeowners across the Greater Toronto Area with reliable, professional, and affordable HVAC services.</p>
+                <p>JP Home Comfort was founded with a simple mission: to provide homeowners across Ontario with reliable, professional, and affordable HVAC services.</p>
                 <p>With over 15 years of experience, our team of licensed technicians has helped thousands of families stay comfortable through every season. From furnace installations to AC repairs, water heater service to complete air quality solutions — we handle it all.</p>
-                <p>Based in Brampton, we proudly serve the entire GTA. We believe in doing the job right the first time, with honest pricing and no hidden fees. That is why our customers keep coming back and recommending us to their friends and family.</p>
+                <p>Based in Brampton, we proudly serve all of Ontario from Windsor to Kingston. We believe in doing the job right the first time, with honest pricing and no hidden fees. That is why our customers keep coming back and recommending us to their friends and family.</p>
                 <p>We also understand that HVAC investments can be significant. That is why we partner with leading financing companies like <strong>Finance It</strong>, <strong>Abode Financial</strong>, and <strong>Vista Rentals</strong> to make comfort affordable for every homeowner.</p>
               </div>
             </div>
@@ -34,7 +60,7 @@ export default function AboutPage() {
           {[
             { num: "15+", label: "Years of Experience", border: "border-brand-red" },
             { num: "5,000+", label: "Happy Customers", border: "border-brand-cyan" },
-            { num: "16+", label: "Cities Served", border: "border-brand-red" },
+            { num: "30+", label: "Cities Served", border: "border-brand-red" },
             { num: "100%", label: "Satisfaction Rate", border: "border-brand-cyan" },
           ].map((s, i) => (
             <div key={i} className={`border-l-4 ${s.border} bg-white/5 rounded-lg p-6 text-center`}>
@@ -71,8 +97,40 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Financing Partners */}
+      {/* Blog Preview */}
       <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <div className="section-label justify-center">From Our Blog</div>
+            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-navy mb-4">HVAC <span className="text-brand-red">Tips & Guides</span></h2>
+            <p className="text-slate-500 text-lg max-w-2xl mx-auto">Expert advice from our licensed technicians to help you make smart home comfort decisions.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {blogs.map(post => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="relative h-48 overflow-hidden">
+                  <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <span className="absolute top-3 left-3 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-heading font-bold text-lg text-brand-navy mb-2 group-hover:text-brand-red transition-colors leading-snug">{post.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-3">{post.excerpt}</p>
+                  <span className="text-brand-cyan font-semibold text-sm flex items-center gap-1">
+                    Read More
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg>
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/blog" className="btn-red px-8 py-4">View All Blog Posts</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Financing Partners */}
+      <section className="py-20 lg:py-28 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <div className="section-label justify-center">Financing</div>
@@ -85,7 +143,7 @@ export default function AboutPage() {
               { name: "Abode Financial", desc: "Competitive rates and quick approvals for HVAC, plumbing, and home comfort upgrades. No hidden fees and flexible repayment options.", features: ["Competitive rates", "Quick approval process", "No hidden fees"] },
               { name: "Vista Rentals", desc: "Rental programs for furnaces, air conditioners, water heaters, and more. Low monthly rental with maintenance included.", features: ["Equipment rental programs", "Maintenance included", "Upgrade anytime"] },
             ].map(p => (
-              <div key={p.name} className="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow">
+              <div key={p.name} className="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow">
                 <div className="w-14 h-14 rounded-xl bg-brand-cyan/10 flex items-center justify-center mb-5">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0099D6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
                 </div>
@@ -105,17 +163,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-     
-
       {/* Brands */}
       <section className="py-12 bg-white border-t border-slate-100">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h3 className="font-heading font-bold text-lg text-slate-400 mb-6">Trusted Brands We Work With</h3>
-          <div className="flex justify-center items-center gap-8 lg:gap-12 overflow-x-auto pb-2">
-            {["Lennox","Carrier","Trane","Goodman","Daikin","Rheem","Navien"].map(b=>(
-              <span key={b} className="font-heading font-bold text-lg text-slate-300 hover:text-brand-navy transition-colors cursor-default whitespace-nowrap flex-shrink-0">{b}</span>
-            ))}
-          </div>
+          <h3 className="font-heading font-bold text-lg text-slate-400 mb-8">Trusted Brands We Work With</h3>
+          <BrandLogos />
         </div>
       </section>
 
